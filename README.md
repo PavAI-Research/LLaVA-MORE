@@ -125,6 +125,10 @@ pip install httpx
 
 # all others
 pip install -r requirements.txt
+
+## fix warning
+## "bash: /miniconda/envs/llava-more/lib/libtinfo.so.6: no version information available (required by bash)"
+## conda install -c conda-forge ncurses
 ```
 
 Note that the requirements are heavily inspired by the original [LLaVA](https://github.com/haotian-liu/LLaVA.git) repo.
@@ -164,8 +168,8 @@ export PYTHONPATH=.
 
 # load the original llama 3.1 tokenizer using an active read-only hf_token
 export HF_TOKEN=hf_read_token
-# tokenizer_model_path
-export TOKENIZER_PATH=meta-llama/Meta-Llama-3.1-8B-Instruct
+# tokenizer_model_path (local)
+export TOKENIZER_PATH=model/Meta-Llama-3.1-8B-Instruct
 
 python -u llava/eval/run_llava.py
 ```
