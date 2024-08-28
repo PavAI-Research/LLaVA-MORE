@@ -102,8 +102,16 @@ In the table below, you can find links to ours 🤗 Hugging Face models.
 To create the conda environment named ```more``` use the following instructions.
 With this environment you will have all the packages to run the code in this repo. 
 ```
-conda create -n more python==3.8.16
-conda activate more
+conda create -n llavamore python==3.10
+conda activate llavamore
+
+# CUDA 12.1
+conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+
+# transformers
+pip install transformers=4.44.2
+
+# all others
 pip install -r requirements.txt
 ```
 
