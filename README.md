@@ -116,8 +116,12 @@ conda activate llavamore
 # CUDA 12.1
 conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
 
+# jupyterlab
+conda install jupyterlab
+
 # transformers
 pip install transformers=4.44.2
+pip install httpx
 
 # all others
 pip install -r requirements.txt
