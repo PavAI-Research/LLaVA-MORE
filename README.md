@@ -102,6 +102,14 @@ In the table below, you can find links to ours 🤗 Hugging Face models.
 To create the conda environment named ```more``` use the following instructions.
 With this environment you will have all the packages to run the code in this repo. 
 ```
+## conda export
+conda env export --no-builds | grep -v "prefix" > environment.yml
+
+## conda create
+conda env create -f environment.yml
+```
+
+```
 conda create -n llavamore python==3.10
 conda activate llavamore
 
